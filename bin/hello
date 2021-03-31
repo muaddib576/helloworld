@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""Executable to say hello to the world"""
+
+import sys
+from pathlib import Path
+
+rootdir = Path(__file__).parent.parent
+sys.path.append(str(rootdir))
+
+from helloworld.hello import main
+main()
